@@ -7,6 +7,9 @@ import Buttons from './components/Buttons';
 import Checkboxes from './components/Checkboxes';
 import Typography from './components/Typography';
 import Dropdown from './components/Dropdown';
+import RadioGroup from './components/RadioGroup';
+import Progressbar from './components/Progressbar';
+import Sliders from './components/Sliders';
 
 import './App.css';
 
@@ -32,11 +35,16 @@ export default function App() {
   return (
     <div className="panel">
       <Typography />
-      <Spectrum.Divider size="small" />
-      <Buttons />
-      <Checkboxes />
-      <Dropdown />
-      <footer>
+      <Spectrum.Divider size="medium" />
+      <div className="element">
+        <Buttons />
+        <Checkboxes />
+        <Dropdown />
+        <RadioGroup />
+        <Progressbar />
+        <Sliders />
+      </div>
+      <footer className="component">
         <Spectrum.Button onClick={() => renderDialog()}>Modal Dialog</Spectrum.Button>
       </footer>
     </div>

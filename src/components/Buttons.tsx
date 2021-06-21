@@ -5,27 +5,14 @@ export default function Buttons() {
   return (
     <>
       <div className="element">
-        <Spectrum.Detail>NORMAL</Spectrum.Detail>
-        <div className="flex-row begin">
-          <Spectrum.ActionButton>Do Action</Spectrum.ActionButton>
-          <Spectrum.ActionButton disabled>Do Action</Spectrum.ActionButton>
-        </div>
-      </div>
-      <div className="element">
-        <Spectrum.Detail>QUIET</Spectrum.Detail>
-        <div className="flex-row begin">
-          <Spectrum.ActionButton quiet>Do Action</Spectrum.ActionButton>
-          <Spectrum.ActionButton quiet disabled>
-            Do Action
-          </Spectrum.ActionButton>
-        </div>
-      </div>
-      <div className="element">
-        <Spectrum.Detail>ICONS</Spectrum.Detail>
-        <div className="flex-row begin">
+        <Spectrum.Detail>BUTTON</Spectrum.Detail>
+        <div className="flex-row around">
+          <Spectrum.ActionButton>Button</Spectrum.ActionButton>
+          <Spectrum.ActionButton disabled>Button</Spectrum.ActionButton>
+          <Spectrum.ActionButton quiet>Button</Spectrum.ActionButton>
           <Spectrum.ActionButton>
             <Spectrum.Icon name="ui:Magnifier" size="xs" slot="icon" />
-            Do Action
+            Button
           </Spectrum.ActionButton>
           <Spectrum.ActionButton>
             <Spectrum.Icon name="ui:Magnifier" size="xs" slot="icon" />

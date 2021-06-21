@@ -6,12 +6,6 @@ export default function Checkboxes() {
     <>
       <div className="element">
         <Spectrum.Detail>CHECKBOX</Spectrum.Detail>
-        <div className="flex-row begin">
-          <Spectrum.Checkbox>Checkbox</Spectrum.Checkbox>
-        </div>
-      </div>
-      <div className="element">
-        <Spectrum.Detail>CHECKBOX STATES</Spectrum.Detail>
         <div className="flex-row around">
           <Spectrum.Checkbox checked>Checkbox</Spectrum.Checkbox>
           <Spectrum.Checkbox indeterminate>Checkbox</Spectrum.Checkbox>
