@@ -10,6 +10,7 @@ import Dropdown from './components/Dropdown';
 import RadioGroup from './components/RadioGroup';
 import Progressbar from './components/Progressbar';
 import Sliders from './components/Sliders';
+import Textfields from './components/Textfields';
 
 import './App.css';
 
@@ -43,6 +44,7 @@ export default function App() {
         <RadioGroup />
         <Progressbar />
         <Sliders />
+        <Textfields />
       </div>
       <footer className="component">
         <Spectrum.Button onClick={() => renderDialog()}>Modal Dialog</Spectrum.Button>
