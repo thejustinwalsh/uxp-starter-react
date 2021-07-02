@@ -11,8 +11,7 @@
         "jsx": "react",
         "typeRoots": [
             "node_modules/@types",
-            "node_modules/uxp-types",
-            "./@types"
+            "node_modules/uxp-types"
         ],
         "lib": [
             "esnext",
