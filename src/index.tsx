@@ -4,6 +4,8 @@ import React from 'react';
 
 import { core as psCore } from 'photoshop';
 import App from './App';
+import Home from './components/Home';
+import About from './components/About';
 
 // Render dialog to DOM, this will show the UI in the container, like a panel
 ReactDOM.render(<App />, document.getElementById('root'));

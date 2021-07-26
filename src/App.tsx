@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Spectrum from 'react-uxp-spectrum';
 
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Buttons from './components/Buttons';
 import Checkboxes from './components/Checkboxes';
 import Typography from './components/Typography';
@@ -11,6 +12,10 @@ import RadioGroup from './components/RadioGroup';
 import Progressbar from './components/Progressbar';
 import Sliders from './components/Sliders';
 import Textfields from './components/Textfields';
+
+import Nav from './components/Nav';
+import Home from './components/Home';
+import About from './components/About';
 
 import './App.css';
 
@@ -38,6 +43,15 @@ export default function App() {
       <Typography />
       <Spectrum.Divider size="medium" />
       <div className="element">
+        <div>
+          <Router>
+            <Nav />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+            </Switch>
+          </Router>
+        </div>
         <Buttons />
         <Checkboxes />
         <Dropdown />
